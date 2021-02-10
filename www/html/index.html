@@ -1,0 +1,419 @@
+<html>
+	<head>
+		<title>BitsxlaMarato 2020 - La FrancoArgentina Team</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<script type="text/javascript" src="/jquery/jquery-3.3.1.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="/jquery/DataTables/bootstrap.min.css"/>
+		<link href="/jquery/DataTables/DataTables-1.10.18/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+		<script src="/jquery/DataTables/DataTables-1.10.18/js/jquery.dataTables.js"></script>
+		<link rel="stylesheet" type="text/css" href="/jquery/DataTables/dataTables.bootstrap.min.css"/>
+		<script src="stylesheet" type="text/css" href="/jquery/DataTables/dataTables.js"/></script>
+
+		<style>
+
+    			.blue-button {
+        			display: inline-block;
+        			-webkit-box-sizing: content-box;
+        			-moz-box-sizing: content-box;
+        			box-sizing: content-box;
+        			cursor: pointer;
+        			padding: 5px 15px;
+        			border: 1px solid #018dc4;
+        			-webkit-border-radius: 3px;
+        			border-radius: 3px;
+        			font: normal 16px/normal "Times New Roman", Times, serif;
+        			color: rgba(255,255,255,0.9);
+        			-o-text-overflow: clip;
+        			text-overflow: clip;
+        			background: #787A7D;
+        			-webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.2) ;
+        			box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.2) ;
+        			text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+        			-webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+        			-moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+        			-o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+        			transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    			}
+			
+    			.light-blue-button {
+        			display: inline-block;
+        			-webkit-box-sizing: content-box;
+        			-moz-box-sizing: content-box;
+        			box-sizing: content-box;
+        			cursor: pointer;
+        			padding: 2px 8px;
+        			border: 1px solid #018dc4;
+        			-webkit-border-radius: 3px;
+        			border-radius: 3px;
+        			font: normal 12px/normal "Times New Roman", Times, serif;
+        			color: rgba(255,255,255,0.9);
+        			-o-text-overflow: clip;
+        			text-overflow: clip;
+        			background: #a6cfe0;
+        			-webkit-box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.2) ;
+        			box-shadow: 3px 3px 5px 0 rgba(0,0,0,0.2) ;
+        			text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+        			-webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+        			-moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+        			-o-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+        			transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
+    			}
+			
+    			.text-input {
+        			display: inline-block;
+        			-webkit-box-sizing: content-box;
+        			-moz-box-sizing: content-box;
+        			box-sizing: content-box;
+        			padding: 4px 10px;
+        			border: 1px solid #b7b7b7;
+					margin-bottom: 30px;
+        			-webkit-border-radius: 3px;
+        			border-radius: 3px;
+        			font: normal 16px/normal "Times New Roman", Times, serif;
+        			color: rgba(0,142,198,1);
+        			-o-text-overflow: clip;
+        			text-overflow: clip;
+        			letter-spacing: 1px;
+        			word-spacing: 2px;
+        			background: rgba(234,234,234,1);
+        			-webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+        			box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+        			text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+        			-webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        			-moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        			-o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+        			transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    			}
+
+			#title-1 {
+				font-family: Verdana, Geneva, sans-serif;
+				font-size: 24px;
+				letter-spacing: 0.4px;
+				word-spacing: 0px;
+				color: #000000;
+				font-weight: 700;
+				text-decoration: none;
+				font-style: normal;
+				font-variant: normal;
+				text-transform: none;
+			}
+
+			#title-2 {
+				font-family: Verdana, Geneva, sans-serif;
+				font-size: 20px;
+				letter-spacing: 0.4px;
+				word-spacing: 0px;
+				color: #000000;
+				font-weight: 700;
+				text-decoration: none;
+				font-style: normal;
+				font-variant: normal;
+				text-transform: none;
+				vertical-align: middle;
+				text-align: center;
+			}
+
+			#title-3 {
+				font-family: Verdana, Geneva, sans-serif;
+				font-size: 12px;
+				letter-spacing: 0.4px;
+				word-spacing: 0px;
+				color: #000000;
+				font-weight: 700;
+				text-decoration: none;
+				font-style: normal;
+				font-variant: normal;
+				text-transform: none;
+			}
+
+			#all-content {
+				margin: auto;
+			}
+
+			.center {
+				text-align: center;
+			}
+
+			.row {
+				min-height: 100px;
+				position: relative;
+				text-align: center;
+			}
+
+			.column_center {
+  				display: inline-block;
+  				padding: 20px;
+  				border:1px solid red;
+			}
+			
+			label {
+  				float: center;
+  				margin: 10 30px;
+			}
+
+
+			/* The switch - the box around the slider */
+			.switch {
+			  position: relative;
+			  display: inline-block;
+			  width: 40px;
+			  height: 24px;
+			  margin: 5px;
+			}
+
+			/* Hide default HTML checkbox */
+			.switch input {
+			  opacity: 0;
+			  width: 0;
+			  height: 0;
+			}
+
+			/* The slider */
+			.slider {
+			  position: absolute;
+			  cursor: pointer;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: #ccc;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			.slider:before {
+			  position: absolute;
+			  content: "";
+			  height: 16px;
+			  width: 16px;
+			  left: 4px;
+			  bottom: 4px;
+			  background-color: white;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			input:checked + .slider {
+			  background-color: #2196F3;
+			}
+
+			input:focus + .slider {
+			  box-shadow: 0 0 1px #2196F3;
+			}
+
+			input:checked + .slider:before {
+			  -webkit-transform: translateX(17px);
+			  -ms-transform: translateX(17px);
+			  transform: translateX(17px);
+			}
+
+			/* Rounded sliders */
+			.slider.round {
+			  border-radius: 24px;
+			}
+
+			.slider.round:before {
+			  border-radius: 50%;
+			}
+			
+
+		</style>
+
+		<script>
+			function enableSubmit(selectedObject) {
+				cap();
+				t1 = document.getElementById("_firstname").value
+				t2 = document.getElementById("_lastname").value
+				t4 = document.getElementById("clinical_desc").value
+				t5 = document.getElementById("clinical_id").value
+				document.getElementById("firstname").value = document.getElementById("_firstname").value.replace(' ', '_')
+				document.getElementById("lastname").value = document.getElementById("_lastname").value.replace(' ', '_')
+				if (t1 != '' && t2 != '') {
+        				document.getElementById("submitButton").disabled = false;
+        				document.getElementById("submitButton").style.background = '#0199d9';
+    				} else {
+        				document.getElementById("submitButton").disabled = true;
+        				document.getElementById("submitButton").style.background = '#787A7D';
+    				}
+			}
+
+			function cap() {
+				document.getElementById("_firstname").value = document.getElementById("_firstname").value.trim().replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+				document.getElementById("_lastname").value = document.getElementById("_lastname").value.trim().replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+			}
+
+			var decodeHTML = function (html) { 
+				var txt = document.createElement('textarea'); 
+				txt.innerHTML = html; 
+				return txt.value; 
+			};
+
+			function switchForms_orig() {
+				var f1 = document.getElementById("clinical_desc");
+    				var f2 = document.getElementById("clinical_id");
+    				if (document.getElementById("toggle-switch").checked) {
+        				f1.style.display = "block";
+        				f2.style.display = "none";
+        				showData(document.getElementById("clinical_desc"));
+        				document.getElementById('desc').style.color = '#787A7D';
+        				document.getElementById('ids').style.color = '#0199d9';
+    				} else {
+        				f1.style.display = "none";
+        				f2.style.display = "block";
+        				showData(document.getElementById("clinical_id"));
+        				enableSubmit(document.getElementById("clinial_id"));
+        				document.getElementById('desc').style.color = '#0199d9';
+        				document.getElementById('ids').style.color = '#787A7D';
+    				}
+			}
+			function switchForms() {
+				var f1 = document.getElementById("desc");
+    			var f2 = document.getElementById("ids");
+    			var f3 = document.getElementById("keyword");
+    			var f4 = document.getElementById("action_on_post");
+    			var radio_1 = document.getElementById("analysis_action_radio_1");
+    			var radio_2 = document.getElementById("analysis_action_radio_2");
+    			var radio_3 = document.getElementById("analysis_action_radio_3");
+    			if (radio_1.checked) {
+        			f1.style.display = "block";
+        			f2.style.display = "none";
+        			f3.style.display = "none";
+        			f4.value = "clinical_description";
+    			} 
+    			if (radio_2.checked) {
+        			f1.style.display = "none";
+        			f2.style.display = "none";
+        			f3.style.display = "block";
+        			f4.value = "keyword";
+    			} 
+    			if (radio_3.checked) {
+        			f1.style.display = "none";
+        			f2.style.display = "block";
+        			f3.style.display = "none";
+        			f4.value = "case_id";
+    			}
+			}
+
+
+			function preFillDescription(cb) {
+				if (document.getElementById('pre_fill_checkbox').checked) {
+					document.getElementById("clinical_desc").disabled = false;
+					var html_txt = "Var&oacute;n de 44 a&ntilde;os ingresado por trauma facial. El estudio radiogr&aacute;fico revel&oacute; una gran lesi&oacute;n radiol&uacute;cida y una fractura del &aacute;ngulo desplazada.  \n\nSe realiz&oacute; enucleaci&oacute;n de la lesi&oacute;n, extracci&oacute;n de las ra&iacute;ces dentarias causantes y la reducci&oacute;n-osteos&iacute;ntesis de la fractura con alambre intra&oacute;seo y mini placa con tornillos monocorticales.  \n\nEl estudio histol&oacute;gico del material enucleado, revel&oacute; un quiste radicular inflamatorio. La consolidaci&oacute;n &oacute;sea fue observada radiogr&aacute;ficamente dos meses despu&eacute;s.  ";
+					document.getElementById("clinical_desc").innerHTML = html_txt;
+					var decoded = decodeHTML(html_txt);
+					document.getElementById("clinical_desc").value = decoded;
+					document.getElementById("clinical_id").innerHTML = '';
+					document.getElementById("clinical_id").value = '';
+				} else {
+					document.getElementById("clinical_id").innerHTML = '';
+					document.getElementById("clinical_desc").innerHTML = '';
+					document.getElementById("clinical_desc").value = '';
+					document.getElementById("clinical_id").value = '';
+				}
+			}
+		</script>
+
+	</head>
+
+<body onload="enableSubmit(); switchForms()">
+	<div id="all-content">
+		<div class="row">
+	<div id="title-2">BitsxlaMarato 2020 - La FrancoArgentina Team</div>
+	<br>
+	<br>
+	<form enctype="multipart/form-data"
+			action="/cgi-bin2/run_model.py" method="post">
+	<div id="title-3">
+	<label>
+		Doctor's First Name: <input type="text" name="_firstname" id="_firstname" class="text-input" onchange="enableSubmit(this)">
+		            <input type="text" name="firstname" id="firstname" hidden>
+	</label>
+	<label>
+		Doctor's Last Name: <input type="text" name="_lastname" id="_lastname" class="text-input" onchange="enableSubmit(this)">
+		           <input type="text" name="lastname" id="lastname" hidden>
+	</label>
+	</div>
+	<br>
+	<input type="text" name="action_on_post" id="action_on_post" hidden>
+	<center>
+	  <fieldset id="analysis_action">
+	  <table>
+	  	<tr>
+	  	  <td>
+		<input type="radio" value="free_clinical_desc" checked=true id="analysis_action_radio_1" name="analysis_action_radio" onclick='switchForms();'>Input free text clinical description <br>
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+		<input type="radio" value="keyword_search" id="analysis_action_radio_2" name="analysis_action_radio" onclick='switchForms();'>Search for a keyword in the model's clusters <br>
+		  </td>
+		</tr>
+		<tr>
+		  <td>
+		<input type="radio" value="corpus_case" id="analysis_action_radio_3" name="analysis_action_radio" onclick='switchForms();'"analysis_action_radio">Input a case ID from the input corpus <br>
+		  </td>
+		</tr>
+	  </table>
+	  </fieldset>
+	</center>
+	<br>
+	<br>
+	<div id="desc">
+	<center>
+
+		<table border=0>
+			<tr>
+				<td>
+					<b>Type clinical description:</b> (free text) 
+				</td>
+				<td>
+					<label class="switch">
+  						<input type="checkbox" id='pre_fill_checkbox' name='pre_fill_checkbox' type='checkbox' value='true' onclick='preFillDescription(this);'>
+  						<span class="slider round"> </span>
+				</td>
+				<td>
+					<i>or fill with sample data?</i>
+				</td>
+			</tr>
+		</table>
+		
+		<textarea name="clinical_desc" id="clinical_desc" rows="25" cols="80" class="text-input" onchange="enableSubmit(this)"></textarea>
+		<input type="hidden" id="toggle_field" name="toggle_field" value="true">
+	</center>
+	</div>
+	<div id="ids">
+	<center>
+	<label>
+		<b>Case ID from corpus:</b> <input type="number" min='1' max='2500' name="clinical_id" id="clinical_id" class="text-input" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" onchange="enableSubmit(this)">
+	</label>
+	</center>
+	</div>
+	<div id="keyword">
+	<center>
+	<label>
+		<b>Input a keyword to search for:</b> <input type="text" minlength="3" maxlength="30" size="30"  name="keyword" id="keyword" class="text-input" onchange="enableSubmit(this)">
+	</label>
+	</center>
+	</div>
+	</div>
+	<br>
+	<center><label><input type="submit" value="Submit" id="submitButton" class="blue-button" onclick="cap()" /></label></center>
+	</div>
+	</form>
+	</div>
+	</div>
+	<hr>
+	<center>
+		<table border=0 height="100px" width="60%">
+			<tr>
+				<td> <img src="/images/FIB-web.png" height="60%"> </td>
+				<td> <img src="/images/hackers-upc-web.png" height="60%"> </td>
+				<td> <img src="/images/bsc-web.png" height="60%"> </td>
+				<td> <img src="/images/plan-tl-web.png" height="60%"> </td>
+			</tr>
+		</table>
+	</center>
+</body>
+</html>
